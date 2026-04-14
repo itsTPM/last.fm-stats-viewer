@@ -1,0 +1,49 @@
+.profile {
+  border-start-start-radius: 0;
+  border-start-end-radius: 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.name {
+  margin-bottom: 0;
+}
+
+.image {
+  order: -1;
+  height: 6rem;
+  width: 6rem;
+  border-radius: 2px;
+}
+
+.stats {
+  display: grid;
+  align-items: center;
+  margin-bottom: 0;
+  justify-content: space-around;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+  gap: 1rem;
+
+  li {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: 48rem) {
+    display: flex;
+  }
+}
+
+.statsSkeleton {
+  height: 1lh;
+  margin-inline: auto;
+}
+
+.nameSkeleton {
+  height: 1.5lh;
+  width: 16rem;
+}

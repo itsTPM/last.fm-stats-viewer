@@ -1,0 +1,16 @@
+.list {
+  display: grid;
+  gap: 1rem;
+
+  li {
+    display: flex;
+  }
+
+  @media (min-width: 48rem) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: 72rem) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

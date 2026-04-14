@@ -1,0 +1,37 @@
+.media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-wrap: balance;
+  gap: 0.5rem;
+  flex-grow: 1;
+
+  > * {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: 48rem) {
+    min-width: 12rem;
+  }
+}
+
+.image {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 2px;
+}
+
+.textSkeleton,
+.titleSkeleton {
+  width: 80%;
+}
+
+.textSkeleton {
+  height: 1lh;
+}
+
+.titleSkeleton {
+  height: 1.25lh;
+}
